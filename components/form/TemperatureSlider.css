@@ -1,0 +1,52 @@
+/* Custom Temperature Slider Styles */
+input[type=range].custom-slider {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100%;
+}
+input[type=range].custom-slider:focus {
+  outline: none;
+}
+/* Track */
+input[type=range].custom-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(240, 90%, 60%), hsl(180, 80%, 50%), hsl(60, 90%, 60%), hsl(0, 90%, 60%));
+  border-radius: 6px;
+}
+input[type=range].custom-slider::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(240, 90%, 60%), hsl(180, 80%, 50%), hsl(60, 90%, 60%), hsl(0, 90%, 60%));
+  border-radius: 6px;
+}
+/* Thumb */
+input[type=range].custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 3px solid #111827;
+  height: 24px;
+  width: 36px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  cursor: pointer;
+  margin-top: -6px;
+  transition: transform 0.15s ease-out;
+}
+input[type=range].custom-slider::-moz-range-thumb {
+  border: 3px solid #111827;
+  height: 24px;
+  width: 36px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  cursor: pointer;
+  transition: transform 0.15s ease-out;
+}
+/* Active state for visual feedback */
+input[type=range].custom-slider:active::-webkit-slider-thumb {
+  transform: scale(1.1);
+}
+input[type=range].custom-slider:active::-moz-range-thumb {
+  transform: scale(1.1);
+}

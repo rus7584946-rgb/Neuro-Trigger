@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Основные опции */
+    "target": "ESNext", // Компилируем в самый современный стандарт JavaScript
+    "module": "ESNext", // Используем современные ES модули
+    "jsx": "react-jsx", // Используем новый JSX трансформер от React 17+
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Включаем типы для DOM и последних версий JS
+
+    /* Строгость и качество кода */
+    "strict": true, // Включает все строгие проверки типов - ОБЯЗАТЕЛЬНО
+    "noUnusedLocals": true, // Запрещает неиспользуемые локальные переменные
+    "noUnusedParameters": true, // Запрещает неиспользуемые параметры в функциях
+    "noFallthroughCasesInSwitch": true, // Требует break в каждом case
+    "forceConsistentCasingInFileNames": true, // Одинаковый регистр в именах файлов
+
+    /* Настройки модулей */
+    "moduleResolution": "bundler", // Современный способ разрешения модулей, как в Vite/Webpack
+    "allowImportingTsExtensions": true, // Разрешаем импорты с расширением .ts/.tsx
+    "resolveJsonModule": true, // Разрешаем импортировать JSON файлы как модули
+    "isolatedModules": true, // Гарантирует, что каждый файл может быть скомпилирован отдельно
+    "noEmit": true, // Мы не компилируем TS в JS, это делает браузер/бандлер. Эта опция только для проверки типов.
+
+    /* Дополнительные опции */
+    "skipLibCheck": true, // Пропускаем проверку типов в библиотеках (d.ts файлах) для ускорения
+    "allowSyntheticDefaultImports": true, // Для совместимости с CommonJS модулями
+    "esModuleInterop": true // Улучшает совместимость между CommonJS и ES Modules
+  },
+  "include": ["**/*.ts", "**/*.tsx"], // Включаем все .ts и .tsx файлы в проекте
+  "exclude": ["node_modules"] // Исключаем папку node_modules
+}
